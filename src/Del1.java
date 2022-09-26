@@ -4,6 +4,7 @@ public class Del1 {
     //HEJdsfsd
 
         //Terning hej
+        //Hej pt. 2
 
 
 
