@@ -4,8 +4,7 @@ import java.util.Random;
 public class Terninger {
     int terningSum;
     int sum;
-    Terninger terninger;
-
+    //Her laves en konstrukter og gør det object.
     Terninger(int sum) {
 this.sum = terningSum;
     }
