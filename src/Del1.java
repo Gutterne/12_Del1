@@ -3,7 +3,10 @@ public class Del1 {
     public static void main (String [] args){
 
         //Method reference
-        
+        Terninger terningObject = new Terninger();
+
+
+        //terningObject.rafelBaeger();
 
         //Boolean værdier
         boolean playing =true;
