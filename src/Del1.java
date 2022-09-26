@@ -1,16 +1,19 @@
+
+import java.util.Scanner;
 public class Del1 {
     public static void main (String [] args){
 
-    //HEJdsfsd
+boolean playing =true;
+        Scanner scanner = new Scanner(System.in);
 
-        //Terning hej
-        //Hej pt. 2
+        while(playing) {
+
+            String inp = scanner.nextLine();
+
+            System.out.println("Tryk enter for at spille");
 
 
-
-
-
-
-
+        }
 }
+
 }
