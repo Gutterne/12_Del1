@@ -12,15 +12,12 @@ this.sum = terningSum;
     public void rafelBaeger(int terningSum) {
 
             sum = terningSum;
-            Random rand = new Random(); //random method
-            int border = 7; //Grænse for terningudkast, grunden til vi sætter den til 7, er så den aldrig blir 0,
-            // da den starter på 0.
+            int size = 6; //Størrelsen af vores random interval, Indeholder 0-5, hermed 6 cifre, hvori der består 0.
 
-            int terning1 = rand.nextInt(border);
-            int terning2 = rand.nextInt(border);
+            int terning1 = (int) (Math.random()*size+1); //(+1) afrykker vores interval et tal over, så det er fra 1-6
+            int terning2 = (int) (Math.random()*size+1);
             sum= terning1 + terning2;
             System.out.println(sum);
-
         }
     }
 
