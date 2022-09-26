@@ -8,9 +8,8 @@ boolean playing =true;
 
         while(playing) {
 
-            String inp = scanner.nextLine();
-
             System.out.println("Tryk enter for at spille");
+            String inp = scanner.nextLine();
 
 
         }
