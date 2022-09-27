@@ -1,20 +1,18 @@
 import java.util.Scanner;
 public class Del1 {
-    private static int terningSum;
+    public static int terningSum;
+    public static  int temp1playersum;
+    public static int temp2playersum;
 
     public static void main (String [] args){
 
         //Method reference
-       // Terninger terningObject = new Terninger(terningSum);
-
         Terninger terninger = new Terninger(terningSum);
-
-
 
 
         //Boolean værdier
         boolean playing =true;
-        boolean player2 = false;
+
 
         Scanner scanner = new Scanner(System.in);
 
@@ -25,12 +23,16 @@ public class Del1 {
             System.out.println("Tryk enter for at spille");
             String p1 = scanner.nextLine();
             terninger.rafelBaeger(terningSum);
+            //System.out.println((temp1playersum));
+            terninger.player1(temp1playersum);
             //player 2
             System.out.println("Player 2 spiller nu");
             System.out.println("Tryk enter for at spille");
             String p2 = scanner.nextLine();
 
             terninger.rafelBaeger(terningSum);
+            terninger.player2(temp2playersum);
+
 
         }
 }
