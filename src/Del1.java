@@ -21,13 +21,19 @@ public class Del1 {
             System.out.println("Player 1 spiller nu");
             System.out.println("Tryk enter for at spille");
             String p1 = scanner.nextLine();
+            System.out.print("Player 1, har kastet: ");
             terninger.rafelBaeger(terningSum);
+            System.out.println("");
+
+
             //player 2
             System.out.println("Player 2 spiller nu");
             System.out.println("Tryk enter for at spille");
             String p2 = scanner.nextLine();
-            terninger.rafelBaeger(terningSum);
 
+            System.out.print("Player 2, har kastet: ");
+            terninger.rafelBaeger(terningSum);
+            System.out.println("");
         }
 }
 
