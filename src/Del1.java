@@ -33,7 +33,6 @@ public class Del1 {
             terninger.rafelBaeger(terningSum);
             terninger.player2(temp2playersum);
 
-
         }
 }
 

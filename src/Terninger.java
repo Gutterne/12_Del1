@@ -33,14 +33,18 @@ public class Terninger {
 
         public void player1 (int temp1playersum){
         temp1 += temp1playersum + sum;
-
-            System.out.println(temp1);
-
+            System.out.println();
+            System.out.println(sum+" Du har slået");
+            System.out.println(temp1+ " Du har nuværende");
+            System.out.println();
         }
     public void player2 (int temp2playersum){
         temp2 += temp2playersum + sum;
+        System.out.println();
+        System.out.println(sum+"  Du har slået");
+        System.out.println(temp2 + "  Du har nuværende");
+        System.out.println();
 
-        System.out.println(temp2);
     }
     }
 
