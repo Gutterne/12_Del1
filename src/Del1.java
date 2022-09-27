@@ -4,13 +4,10 @@ public class Del1 {
 
     public static void main (String [] args){
 
-        //Method reference
+
        // Terninger terningObject = new Terninger(terningSum);
 
         Terninger terninger = new Terninger(terningSum);
-
-
-
 
         //Boolean værdier
         boolean playing =true;
