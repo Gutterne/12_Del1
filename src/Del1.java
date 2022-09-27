@@ -26,7 +26,6 @@ public class Del1 {
             System.out.println("Player 2 spiller nu");
             System.out.println("Tryk enter for at spille");
             String p2 = scanner.nextLine();
-
             terninger.rafelBaeger(terningSum);
 
         }
