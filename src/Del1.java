@@ -13,7 +13,6 @@ public class Del1 {
         //Boolean værdier
         boolean playing =true;
 
-
         Scanner scanner = new Scanner(System.in);
 
         while(playing) {
@@ -34,6 +33,9 @@ public class Del1 {
             terninger.player2(temp2playersum);
 
         }
+
+
 }
+
 
 }

@@ -29,21 +29,28 @@ public class Terninger {
 
         //System.out.println(Temp1Sum);
         }
-
-
         public void player1 (int temp1playersum){
         temp1 += temp1playersum + sum;
             System.out.println();
             System.out.println(sum+" Du har slået");
             System.out.println(temp1+ " Du har nuværende");
             System.out.println();
-        }
+            if(temp1 >= 40) {
+                System.out.println("VI HAR EN VINDER DING DING DING Player 1 yeha!");
+                System.exit(terningSum);
+            }
+            }
     public void player2 (int temp2playersum){
+
         temp2 += temp2playersum + sum;
         System.out.println();
         System.out.println(sum+"  Du har slået");
         System.out.println(temp2 + "  Du har nuværende");
         System.out.println();
+        if(temp2 >= 40) {
+            System.out.println("VI HAR EN VINDER DING DING DING, player 2 Woop Woop!");
+            System.exit(terningSum);
+        }
 
     }
     }
