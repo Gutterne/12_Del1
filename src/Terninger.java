@@ -7,7 +7,7 @@ public class Terninger {
     int temp1;
     int temp2;
 
- boolean doomed =false;
+
  boolean ekstra =false;
     int temp1playersum =0;
     int temp2playersum = 0;
@@ -29,11 +29,8 @@ public class Terninger {
             int terning1 = (int) (Math.random()*size+1); //(+1) afrykker vores interval et tal over, så det er fra 1-6
             int terning2 = (int) (Math.random()*size+1);
             sum= terning1 + terning2;
-            if(sum ==2) {
-                doomed = true;
-            } else {
-                doomed =false;
-            }
+
+
             // Nyt sæt terninger til ekstra slag
             if (terning1==terning2){
                 sum2 = terningSum2;
@@ -55,50 +52,41 @@ public class Terninger {
 
         //System.out.println(Temp1Sum);
         }
-        public void player1 (int temp1playersum){
-        temp1 += temp1playersum + sum;
-            if(doomed) {
-            temp1 =0;
-            }
+        public void player1 (int temp1playersum) {
+            temp1 += temp1playersum + sum;
+
             System.out.println();
-            System.out.println("Du har slået: "+sum);
-            System.out.println("Nuværende Points: "+temp1);
+            System.out.println(" Du har slået: " + sum);
+            System.out.println(" Nuværende Points: " + temp1);
             System.out.println();
             //Ekstra slag
-            if(ekstra){
-                if(doomed){
-                    temp1=0;
-                }
+            if (ekstra) {
                 temp1 += temp1playersum + sum2;
                 System.out.println();
-                System.out.println("Du har slået: "+sum2);
-                System.out.println("Nuværende Points: "+temp1 );
+                System.out.println(" Du har slået: " + sum2);
+                System.out.println(" Nuværende Points: " + temp1);
                 System.out.println();
             }
-            if(temp1 >= 40) {
+            if (temp1 >= 40) {
                 System.out.println("VI HAR EN VINDER DING DING DING Player 1 yeha!");
                 System.exit(terningSum);
             }
-            }
-    public void player2 (int temp2playersum){
-        if(doomed) {
-            temp2 = 0;
         }
+    public void player2 (int temp2playersum){
+
 
             temp2 += temp2playersum + sum;
             System.out.println();
-            System.out.println("Du har slået: "+sum);
-            System.out.println("Nuværende Points: "+temp2);
+            System.out.println(" Du har slået: "+sum);
+            System.out.println(" Nuværende Points: "+temp2);
             System.out.println();
             //Ekstra slag
         if(ekstra){
-            if(doomed){
-                temp2=0;
-            }
+
             temp2 += temp2playersum + sum2;
             System.out.println();
-            System.out.println("Du har slået: "+sum2);
-            System.out.println("Nuværende Points: "+temp2);
+            System.out.println(sum2+" Du har slået: ");
+            System.out.println(temp2+" Nuværende Points: ");
             System.out.println();
         }
 
